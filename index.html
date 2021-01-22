@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <title>Warsztat</title>
+</head>
+<body>
+    <div class="card-form" id='dodaj-card' hidden>
+        <a href="#"><button id='x' class="button">X</button></a>
+        <form class="signup" method="POST">
+          <div class="form-body">
+            <div class="row">
+                <select name="rodzaj" id="cars">
+                    <option value="CZĘŚĆ">Część</option>
+                    <option value="ROWER">Rower</option>
+                </select>
+              <input name='nazwa' type="text" placeholder="Nazwa" required>
+            </div>
+            <div class="row">
+              <input name="ilosc" type="number" min='1' placeholder="Ilość" required>
+            </div>
+          </div>
+          <div class="rule"></div>
+          <div class="form-footer">
+            <input type="submit" value='DODAJ'></input>
+          </div>
+        </form>
+    </div>
+    <div id="navbar">
+        <h1 id="navbar-logo"><span>BIKE</span> MAJSTER  <img height="35px" src="rower.svg"/></h1>
+        <nav id="nav-links">
+            <ul>
+                <li>
+                    <a id="navczesci">
+                        CZĘŚCI
+                    </a>
+                </li>
+                <li>
+                    <a id="navrowery">
+                        ROWERY
+                    </a>
+                </li>
+                <li class="navdodaj" >
+                    <a id="dodaj">
+                        DODAJ DO LISTY
+                    </a>
+                </li>
+                <li class="navwyl" >
+                    <a href="/logout" id="navwyl">
+                        WYLOGUJ
+                    </a>
+                </li>
+                <li class="" >
+                    <a id="home">
+                        <img src="home.svg" height="25px" />
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class='szdiv'>
+      <h2 id='h2sz'>Szukaj:</h2>
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Szukaj po opisie...">
+    </div>
+    <div  class="tablica">
+        <h2 id="spis">Spis części i rowerów</h2>
+        <table id='container'>
+            <tr>
+                <th>Rodzaj</th>
+                <th>Opis</th>
+                <th>Ilość</th>
+            </tr>
+        </table>
+    </div>
+    <script src='script.js'></script>
+</body>
+</html>

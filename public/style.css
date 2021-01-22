@@ -1,0 +1,298 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+ body {
+	 background: -webkit-linear-gradient(135deg, #030d16 0%, #000890 100%) ;
+	 background: -moz-linear-gradient(135deg, #030d16 0%, #000890 100%) ;
+	 background: -o-linear-gradient(135deg, #030d16 0%, #000890 100%) ;
+	 background: linear-gradient(135deg, #030d16 0%, #000890 100%) ;
+	 background-size: cover;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 font-family: Raleway;
+	 color: white;
+     letter-spacing: 1px;
+}
+ .card-form {
+    border: 1px black solid;
+    position: absolute;
+    top: 250px;
+    width: 600px;
+    border-radius: 8px;
+    background: whitesmoke;
+    z-index: 100;
+}
+
+@media screen and (max-width:700px) {
+	.card-form {
+		width: 80%;
+	}
+}
+
+ .card-form .form-title {
+	 width: 100%;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 height: 80px;
+	 font-size: 20px;
+	 font-weight: bold;
+	 background: linear-gradient(135deg, #030d16 0%, #000890 100%) ;
+}
+ .card-form .form-body {
+	 padding: 10px;
+}
+ .card-form .form-body .row {
+	 display: flex;
+	 justify-content: space-around;
+	 padding: 10px;
+}
+ .card-form .form-body .row input[type="text"] {
+	 appearance: none;
+	 width: 100%;
+	 margin: 0 15px;
+	 height: 35px;
+	 padding: 5px 15px;
+	 border-radius: 5px;
+	 outline: none;
+	 border: none;
+	 background: #e8ebed;
+	 color: #576366;
+	 font-size: 14px;
+}
+ .card-form .rule {
+	 height: 2px;
+	 background: #e8ebed;
+	 margin: 0px 35px;
+}
+ .card-form .form-footer {
+	 margin: 0 25px 15px 25px;
+	 padding: 15px 10px;
+	 display: flex;
+	 justify-content: space-evenly;
+}
+.card-form .form-footer input {
+	margin: 0;
+	border: none;
+	font-size: 100%;
+	color: inherit;
+	background: linear-gradient(135deg, #030d16 0%, #000890 100%) ;
+	cursor: pointer;
+	padding: 1rem 1.5rem;
+	line-height: 1.25;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 600;
+	border-radius: 0.5rem;
+	transition: all 0.3s ease;
+}
+ .card-form .form-footer a {
+	 display: inline-block;
+	 height: 40px;
+	 line-height: 40px;
+	 border: none;
+	 border-radius: 5px;
+	 padding: 5px 15px;
+	 background: #27ae60;
+	 margin-right: 10px;
+	 font-size: 14px;
+}
+ .card-form .form-footer span {
+	 margin-left: 8px;
+}
+
+#content-heading {
+	margin-top: 3.5rem;
+}
+
+#navbar {
+	display: flex;
+	/* Fixed position is also commonly used for navigation bars */
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+	color: white;
+	z-index: 99; /* optional, use this if any elements overlap the nav bar */
+	box-shadow: 0px 4px 4px gray;
+}
+
+#navbar-logo {
+	margin: 5px;
+}
+
+@media screen and (max-width:600px){
+	#navbar-logo {
+		display: none;
+	}
+}
+
+#navbar-logo span {
+	color: aqua;
+	margin-left: 5px;
+}
+
+#nav-links ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+#nav-links li {
+	list-style: none;
+	transition: 0.3s;
+}
+
+#nav-links li a {
+	text-decoration: none;
+	font-size: x-large;
+	color: white;
+	padding: 0.75rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#nav-links li:hover {
+	background: rgba(0, 8, 144, 0.6)
+}
+#nav-links li:last-child:hover {
+	background-color: black;
+}
+
+
+#nav-links li p {
+	display: none;
+}
+
+
+
+
+/* Change 470px to the width when your navbar's content starts wrapping */
+@media only screen and (max-width: 700px) {
+	#nav-links {
+		width: 100%;
+	}
+	#navbar {
+		align-items: stretch;
+	}
+	#nav-links li a {
+		box-sizing: border-box;
+		font-size: initial;
+	}
+	#nav-links li a:last-child img {
+		height: 17px;
+	}
+}
+
+p {
+    color:whitesmoke;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    /* border: 1px solid rgba(221, 221, 221, 0.5); */
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+	border: 1px solid rgba(221, 221, 221, 0.5);
+}
+
+table tr:first-child {
+	border: 1px solid transparent;
+
+}
+  
+  
+tr:nth-child(even) {
+    background-color:rgba(0, 0, 0, 0.15);
+}
+.tablica {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 150px;
+    width: 93%;
+}
+
+
+
+
+button {
+    width: 100%;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.button{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 1.4em;
+    background: linear-gradient(15deg, #030d16 -80%, #000890 100%);
+}
+
+button:hover {
+	filter: brightness(150%);
+}
+
+#myInput {
+    background-image: url('./public/pngwing.com.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 76%;
+    background: linear-gradient(135deg, #030d16 0%, #000890 100%) fixed;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    margin-top: 15px;
+	position: absolute;
+	color:whitesmoke;
+	margin-left: 100px;
+}
+
+
+
+#h2sz {
+	position: absolute;
+    margin-right: 80%;
+}
+
+@media screen and (max-width:700px) {
+	#myInput {
+		width: 40%;
+	}
+	#h2sz {
+		margin-right: 63%;
+	}
+	
+}
+
+.szdiv {
+    display: flex;
+    position: absolute;
+    margin-top: 150px;
+    justify-content: center;
+    width: 100vw;
+}
+
+#navczesci :hover {
+	background: transparent;
+}
+.plusminus {
+    float: right;
+    border-color: darkblue;
+    margin-left: 10px;
+    height: 100%;
+    width: 55px;
+    border-radius: 25px;
+    padding: 8px;
+}

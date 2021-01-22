@@ -1,0 +1,29 @@
+{
+  "name": "warsztat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patraz/warsztat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patraz/warsztat/issues"
+  },
+  "homepage": "https://github.com/patraz/warsztat#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "bcrypt-nodejs": "0.0.3",
+    "express": "^4.17.1",
+    "font-awesome": "^4.7.0",
+    "knex": "^0.21.15",
+    "nodemon": "^2.0.7",
+    "pg": "^8.5.1",
+    "sequelize": "^6.3.5"
+  }
+}
