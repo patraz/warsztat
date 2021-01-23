@@ -179,7 +179,7 @@
 	}
 	#nav-links li a {
 		box-sizing: border-box;
-		font-size: initial;
+		font-size: x-small;
 	}
 	#nav-links li a:last-child img {
 		height: 17px;
@@ -195,14 +195,12 @@ table {
 }
 
 td, th {
-    /* border: 1px solid rgba(221, 221, 221, 0.5); */
+
     text-align: left;
     padding: 8px;
 }
 
-th {
-	border: 1px solid rgba(221, 221, 221, 0.5);
-}
+
 
 table tr:first-child {
 	border: 1px solid transparent;
@@ -296,3 +294,10 @@ button:hover {
     border-radius: 25px;
     padding: 8px;
 }
+
+@media screen and (max-width: 700px) {
+	.plusminus {
+		width: 30px;
+		height: 40px;
+	}
+}   

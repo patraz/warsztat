@@ -36,7 +36,7 @@ app.use('/warsztat', express.static('public'));
 
 app.post('/', function (req, res) {
     const { login, password } = req.body;
-    if (login === 'majster123' && bcrypt.compareSync(password, '$2b$10$ArSEuMhsuirSppa0uY9euefmKuWkdDhLV0j0ziKaoaleWCgPsfhFq')) {
+    if (login === 'majster' && bcrypt.compareSync(password, '$2b$10$ArSEuMhsuirSppa0uY9euefmKuWkdDhLV0j0ziKaoaleWCgPsfhFq')) {
         zalogowano = true;
         res.redirect('/warsztat')
     } else {

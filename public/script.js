@@ -44,13 +44,11 @@ fetch('http://localhost:3000/items')
     document.getElementById('container').innerHTML = html;
     for( var i = 1; i <= data.length; i++) {
       let btn = document.getElementById('container').rows[i].children[2]
-      console.log(btn)
       btn.innerHTML = `${btn.innerHTML} <button class='plusminus minus'>-</button> <button class='plusminus plus'>+</button>`
     }
     
     for (let i = 0;i< plus.length; i++){
       plus[i].addEventListener('click', ()=>{
-        console.log(plus[i].parentElement.parentElement.children[1].innerHTML)
         let opis = plus[i].parentElement.parentElement.children[1].innerHTML;
         
         
@@ -63,7 +61,6 @@ fetch('http://localhost:3000/items')
 
     for (let i = 0;i< minus.length; i++){
       minus[i].addEventListener('click', ()=>{
-        console.log(minus[i].parentElement.parentElement.children[1].innerHTML)
         let opis1 = minus[i].parentElement.parentElement.children[1].innerHTML;
         
         
@@ -196,13 +193,11 @@ home.addEventListener("click", ()=> {
     
     for( var i = 1; i <= data.length; i++) {
       let btn = document.getElementById('container').rows[i].children[2]
-      console.log(btn)
       btn.innerHTML = `${btn.innerHTML} <button class='plusminus minus'>-</button> <button class='plusminus plus'>+</button>`
     }
     
     for (let i = 0;i< plus.length; i++){
       plus[i].addEventListener('click', ()=>{
-        console.log(plus[i].parentElement.parentElement.children[1].innerHTML)
         let opis = plus[i].parentElement.parentElement.children[1].innerHTML;
         
         
@@ -216,7 +211,6 @@ home.addEventListener("click", ()=> {
 
     for (let i = 0;i< minus.length; i++){
       minus[i].addEventListener('click', ()=>{
-        console.log(minus[i].parentElement.parentElement.children[1].innerHTML)
         let opis1 = minus[i].parentElement.parentElement.children[1].innerHTML;
         
         
