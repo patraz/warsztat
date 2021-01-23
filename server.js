@@ -4,6 +4,7 @@ const fs = require('fs');
 const knex = require('knex');
 const path = require('path')
 const bcrypt = require('bcrypt');
+const { env } = require('process');
  
 
 let zalogowano = false;
@@ -126,4 +127,4 @@ app.get('/czesci', function(req, res){
 })
 
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
