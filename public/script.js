@@ -90,7 +90,7 @@ navCzesci.addEventListener("click", ()=>{
   document.querySelector('tbody').remove()
   document.getElementById('spis').innerHTML = 'Spis części:';
 
-  fetch('https://ancient-citadel-22445.herokuapp.com/')
+  fetch('https://ancient-citadel-22445.herokuapp.com/czesci')
   .then(response => response.json())
   .then((data)=> {
     var html = '<table>';
@@ -119,7 +119,7 @@ navRowery.addEventListener("click", ()=>{
 
   document.getElementById('spis').innerHTML = 'Spis rowerów:';
 
-  fetch('https://ancient-citadel-22445.herokuapp.com/')
+  fetch('https://ancient-citadel-22445.herokuapp.com/rowery')
   .then(response => response.json())
   .then((data)=> {
     var html = '<table>';
