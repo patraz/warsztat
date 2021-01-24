@@ -12,10 +12,8 @@ let zalogowano = false;
 const db = knex({
     client: 'pg',
     connection: {
-      host : 'postgresql-triangular-26100',
-      user : 'postgres',
-      password : 'test',
-      database : 'postgres'
+      host : process.env.DATABASE_URL,
+      ssl: true,
     }
 });
 
