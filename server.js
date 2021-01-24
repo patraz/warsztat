@@ -65,7 +65,7 @@ app.post('/warsztat', function (req, res) {
     db('warsztat1').insert({
         rodzaj: rodzaj,
         opis: nazwa,
-        ilość: ilosc
+        ilosc: ilosc
     }).then(res.redirect('back'))
     } else {
     res.redirect('/')
@@ -84,7 +84,7 @@ app.put('/minus/:opis1', function(req, res) {
     const { opis1 } = req.params
     db('warsztat1')
     .where('opis', opis1)
-    .decrement('ilość', 1)
+    .decrement('ilosc', 1)
     .then(res.end())
 })
 
@@ -92,7 +92,7 @@ app.put('/:opis', function(req, res) {
     const { opis } = req.params
     db('warsztat1')
     .where('opis', opis)
-    .increment('ilość', 1)
+    .increment('ilosc', 1)
     .then(res.redirect(req.get('referer')))
 })
 
