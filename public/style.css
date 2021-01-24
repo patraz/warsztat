@@ -282,6 +282,12 @@ button:hover {
     width: 100vw;
 }
 
+@media only screen and (max-width:700px) {
+	.szdiv {
+		position: absolute;
+	}
+}
+
 #navczesci :hover {
 	background: transparent;
 }
