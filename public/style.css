@@ -22,7 +22,7 @@
     z-index: 100;
 }
 
-@media screen and (max-width:700px) {
+@media only screen and (max-width:700px) {
 	.card-form {
 		width: 80%;
 	}
@@ -123,7 +123,7 @@
 	margin: 5px;
 }
 
-@media screen and (max-width:600px){
+@media only screen and (max-width:600px){
 	#navbar-logo {
 		display: none;
 	}
@@ -264,7 +264,7 @@ button:hover {
     margin-right: 80%;
 }
 
-@media screen and (max-width:700px) {
+@media only screen and (max-width:700px) {
 	#myInput {
 		width: 40%;
 	}
@@ -295,7 +295,7 @@ button:hover {
     padding: 8px;
 }
 
-@media screen and (max-width: 700px) {
+@media  screen and (max-width: 700px) {
 	.plusminus {
 		width: 30px;
 		height: 40px;
