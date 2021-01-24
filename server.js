@@ -3,7 +3,7 @@ const express = require('express');
 const fs = require('fs');
 const knex = require('knex');
 const path = require('path')
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const { env } = require('process');
  
 

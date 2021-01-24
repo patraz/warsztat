@@ -6,7 +6,7 @@
   },
   "description": "",
   "main": "server.js",
-    "scripts": {
+  "scripts": {
     "start": "nodemon server.js"
   },
   "repository": {
@@ -20,8 +20,7 @@
   },
   "homepage": "https://github.com/patraz/warsztat#readme",
   "dependencies": {
-    "bcrypt": "^5.0.0",
-    "bcrypt-nodejs": "0.0.3",
+    "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
     "font-awesome": "^4.7.0",
     "knex": "^0.21.15",
