@@ -19,7 +19,7 @@ function refreshPage(){
 
 
 
-fetch('https://ancient-citadel-22445.herokuapp.com/items')
+fetch('https://warsztat1.herokuapp.com/items')
   .then(response => response.json())
   .then((data)=> {
     data = data.sort((a, b) => a.opis.localeCompare(b.opis));
@@ -52,7 +52,7 @@ fetch('https://ancient-citadel-22445.herokuapp.com/items')
         let opis = plus[i].parentElement.parentElement.children[1].innerHTML;
         
         
-        fetch('https://ancient-citadel-22445.herokuapp.com/' + opis, {
+        fetch('https://warsztat1.herokuapp.com/' + opis, {
          method: 'PUT',
       }); setTimeout(refreshPage(),1000);
       }
@@ -64,7 +64,7 @@ fetch('https://ancient-citadel-22445.herokuapp.com/items')
         let opis1 = minus[i].parentElement.parentElement.children[1].innerHTML;
         
         
-        fetch('https://ancient-citadel-22445.herokuapp.com/minus/' + opis1, {
+        fetch('https://warsztat1.herokuapp.com/minus/' + opis1, {
          method: 'PUT',
       }); 
       setTimeout(refreshPage(),1500);
@@ -76,7 +76,7 @@ fetch('https://ancient-citadel-22445.herokuapp.com/items')
     for (let i = 0;i<delBtn.length;i++) {
       delBtn[i].addEventListener('click', function() {
          let opis = delBtn[i].parentElement.parentElement.children[1].innerHTML 
-         fetch('https://ancient-citadel-22445.herokuapp.com/' + opis, {
+         fetch('https://warsztat1.herokuapp.com/' + opis, {
          method: 'DELETE',
     });
     setTimeout(refreshPage(),200);
@@ -90,7 +90,7 @@ navCzesci.addEventListener("click", ()=>{
   document.querySelector('tbody').remove()
   document.getElementById('spis').innerHTML = 'Spis części:';
 
-  fetch('https://ancient-citadel-22445.herokuapp.com/czesci')
+  fetch('https://warsztat1.herokuapp.com/czesci')
   .then(response => response.json())
   .then((data)=> {
     var html = '<table>';
@@ -119,7 +119,7 @@ navRowery.addEventListener("click", ()=>{
 
   document.getElementById('spis').innerHTML = 'Spis rowerów:';
 
-  fetch('https://ancient-citadel-22445.herokuapp.com/rowery')
+  fetch('https://warsztat1.herokuapp.com/rowery')
   .then(response => response.json())
   .then((data)=> {
     var html = '<table>';
@@ -154,7 +154,7 @@ xButton.addEventListener("click", ()=>{
 })
 
 wyl.addEventListener("click", () => {
-    fetch('https://ancient-citadel-22445.herokuapp.com/logout',{
+    fetch('https://warsztat1.herokuapp.com/logout',{
       method: 'POST'
     })
 })
@@ -168,7 +168,7 @@ home.addEventListener("click", ()=> {
 
   document.getElementById('spis').innerHTML = 'Spis części i rowerów';
 
-  fetch('https://ancient-citadel-22445.herokuapp.com/items')
+  fetch('https://warsztat1.herokuapp.com/items')
   .then(response => response.json())
   .then((data)=> {
     data = data.sort((a, b) => a.opis.localeCompare(b.opis));
@@ -201,7 +201,7 @@ home.addEventListener("click", ()=> {
         let opis = plus[i].parentElement.parentElement.children[1].innerHTML;
         
         
-        fetch('https://ancient-citadel-22445.herokuapp.com/' + opis, {
+        fetch('https://warsztat1.herokuapp.com/' + opis, {
          method: 'PUT',
       }); 
       // setTimeout(refreshPage(),1000);
@@ -214,7 +214,7 @@ home.addEventListener("click", ()=> {
         let opis1 = minus[i].parentElement.parentElement.children[1].innerHTML;
         
         
-        fetch('https://ancient-citadel-22445.herokuapp.com/minus/' + opis1, {
+        fetch('https://warsztat1.herokuapp.com//minus/' + opis1, {
          method: 'PUT',
       }); 
       setTimeout(refreshPage(),1000);
@@ -226,7 +226,7 @@ home.addEventListener("click", ()=> {
     for (let i = 0;i<delBtn.length;i++) {
       delBtn[i].addEventListener('click', function() {
          let opis = delBtn[i].parentElement.parentElement.children[1].innerHTML 
-         fetch('https://ancient-citadel-22445.herokuapp.com/' + opis, {
+         fetch('https://warsztat1.herokuapp.com/' + opis, {
          method: 'DELETE',
     });
     refreshPage();
