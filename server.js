@@ -5,6 +5,7 @@ const knex = require('knex');
 const path = require('path')
 const bcrypt = require('bcryptjs');
 const { env } = require('process');
+const cors = require('cors')
  
 
 let zalogowano = false;
@@ -23,7 +24,7 @@ const db = knex({
 const app = express();
 
 
-
+app.use(cors());
 app.use(express.urlencoded({ extended: false}));
 app.use(express.json());
 
