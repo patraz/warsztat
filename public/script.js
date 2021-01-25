@@ -56,7 +56,7 @@ fetch('https://warsztat1.herokuapp.com/items')
          method: 'PUT',
          headers: {'Content-Type': 'text/plain'},
       }); setTimeout(refreshPage(),1000);
-      }
+      }, false
       )
     }
 
@@ -70,7 +70,7 @@ fetch('https://warsztat1.herokuapp.com/items')
          headers: {'Content-Type': 'text/plain'},
       }); 
       setTimeout(refreshPage(),1500);
-      }
+      }, false
       )
     }
    
@@ -210,7 +210,7 @@ home.addEventListener("click", ()=> {
         },
       }); 
       // setTimeout(refreshPage(),1000);
-      }
+      }, false
       )
     }
 
@@ -224,7 +224,7 @@ home.addEventListener("click", ()=> {
          headers: {'Content-Type': 'text/plain'},
       }); 
       setTimeout(refreshPage(),1000);
-      }
+      }, false
       )
     }
    
