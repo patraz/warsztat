@@ -54,6 +54,7 @@ fetch('https://warsztat1.herokuapp.com/items')
         
         fetch('https://warsztat1.herokuapp.com/' + opis, {
          method: 'PUT',
+         headers: {'Content-Type': 'text/plain'},
       }); setTimeout(refreshPage(),1000);
       }
       )
@@ -66,6 +67,7 @@ fetch('https://warsztat1.herokuapp.com/items')
         
         fetch('https://warsztat1.herokuapp.com/minus/' + opis1, {
          method: 'PUT',
+         headers: {'Content-Type': 'text/plain'},
       }); 
       setTimeout(refreshPage(),1500);
       }
@@ -203,6 +205,9 @@ home.addEventListener("click", ()=> {
         
         fetch('https://warsztat1.herokuapp.com/' + opis, {
          method: 'PUT',
+         headers: {
+          'Content-Type': 'text/plain',
+        },
       }); 
       // setTimeout(refreshPage(),1000);
       }
@@ -216,6 +221,7 @@ home.addEventListener("click", ()=> {
         
         fetch('https://warsztat1.herokuapp.com//minus/' + opis1, {
          method: 'PUT',
+         headers: {'Content-Type': 'text/plain'},
       }); 
       setTimeout(refreshPage(),1000);
       }
